@@ -1,7 +1,7 @@
 
 <template>
 <main class="w-full h-full flex flex-col items-center">
-  <h1>App</h1>
+  <h1 class="text-2xl">BatKwak's Synth</h1>
   <Synth />
 </main>
 </template>

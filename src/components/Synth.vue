@@ -1,6 +1,10 @@
 <template>
+<div class="flex flex-col items-center justify-between h-full p-4">
+    <div class="flex flex-wrap">
+        <WaveFormSelector @picked="selectWaveForm" />
+    </div>
     <Keyboard @playnote="playTone" />
-    <WaveFormSelector @picked="selectWaveForm" />
+</div>
 </template>
 
 <script lang="ts">

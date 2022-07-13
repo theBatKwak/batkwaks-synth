@@ -3,40 +3,40 @@
         <section class="flex mx-auto">
             <div 
                 @click="playTone(tonesFrequencies['C'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">Do</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">Do</div>
             <div 
                 @click="playTone(tonesFrequencies['C#'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-gray-700 text-gray-200">Do#</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-[#5876A1] text-gray-200">Do#</div>
             <div 
                 @click="playTone(tonesFrequencies['D'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">Ré</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">Ré</div>
             <div 
                 @click="playTone(tonesFrequencies['D#'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-gray-700 text-gray-200">Ré#</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-[#5876A1] text-gray-200">Ré#</div>
             <div 
                 @click="playTone(tonesFrequencies['E'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">Mi</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">Mi</div>
             <div 
                 @click="playTone(tonesFrequencies['F'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">Fa</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">Fa</div>
             <div 
                 @click="playTone(tonesFrequencies['F#'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-gray-700 text-gray-200">Fa#</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-[#5876A1] text-gray-200">Fa#</div>
             <div 
                 @click="playTone(tonesFrequencies['G'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">Sol</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">Sol</div>
             <div 
                 @click="playTone(tonesFrequencies['G#'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-gray-700 text-gray-200">Sol#</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-[#5876A1] text-gray-200">Sol#</div>
             <div 
                 @click="playTone(tonesFrequencies['A'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">La</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">La</div>
             <div 
                 @click="playTone(tonesFrequencies['A#'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-gray-700 text-gray-200">La#</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-[#5876A1] text-gray-200">La#</div>
             <div 
                 @click="playTone(tonesFrequencies['B'])" 
-                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-white text-gray-700">Si</div>
+                class="mx-0.5 cursor-pointer rounded w-10 h-48 bg-slate-200 text-gray-700">Si</div>
         </section>
     </div>
 </template>

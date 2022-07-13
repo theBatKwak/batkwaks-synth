@@ -3,8 +3,7 @@
         :is="iconComponent"
         role="img"
         :class="classes"
-        style="height: 1em; width: 1em;"
-  />
+    />
 </template>
 
 <script lang="ts">
