@@ -15,19 +15,20 @@ export default defineComponent({
     components : { Keyboard, WaveFormSelector },
     setup() {
         const audioContext = new window.AudioContext
-        const mainGainNode = audioContext.createGain()
-        mainGainNode.connect(audioContext.destination)
-        mainGainNode.gain.value = 1
+        // mainGainNode.gain.value = 1
         const waveForm = ref('square')
+        const attackTime = ref(0.9)
         const playTone = (freq: number) => {
             const osc = audioContext.createOscillator()
             osc.type = waveForm.value as OscillatorType
             osc.frequency.setValueAtTime(freq, audioContext.currentTime)
-            osc.connect(mainGainNode)
+            const mainGainNode = audioContext.createGain()
+            mainGainNode.gain.cancelScheduledValues(1);
+            mainGainNode.gain.setValueAtTime(0, 1);
+            mainGainNode.gain.linearRampToValueAtTime(1, 0 + attackTime.value)
+            osc.connect(mainGainNode).connect(audioContext.destination)
             osc.start()
-            setTimeout(() => {
-                osc.stop()
-            }, 100)
+            osc.stop(audioContext.currentTime + 1)
         }
         const selectWaveForm = (form: string) => {
             console.log('setting wave form : ', form);
